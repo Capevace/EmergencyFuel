@@ -12,6 +12,11 @@
 		80B974EA1CF11BF60042ED26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B974E81CF11BF60042ED26 /* Main.storyboard */; };
 		80B974EC1CF11BF60042ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B974EB1CF11BF60042ED26 /* Assets.xcassets */; };
 		80B974EF1CF11BF60042ED26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B974ED1CF11BF60042ED26 /* LaunchScreen.storyboard */; };
+		80B974F71CF11D260042ED26 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974F61CF11D260042ED26 /* EmergencyViewController.swift */; };
+		80B974F91CF120190042ED26 /* EmergencyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974F81CF120190042ED26 /* EmergencyButton.swift */; };
+		80B974FB1CF121F80042ED26 /* GasStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FA1CF121F80042ED26 /* GasStationService.swift */; };
+		80B974FD1CF122050042ED26 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FC1CF122050042ED26 /* GasStation.swift */; };
+		80B974FF1CF122B60042ED26 /* GasPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FE1CF122B60042ED26 /* GasPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		80B974EB1CF11BF60042ED26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80B974EE1CF11BF60042ED26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80B974F01CF11BF60042ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B974F61CF11D260042ED26 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		80B974F81CF120190042ED26 /* EmergencyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyButton.swift; sourceTree = "<group>"; };
+		80B974FA1CF121F80042ED26 /* GasStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationService.swift; sourceTree = "<group>"; };
+		80B974FC1CF122050042ED26 /* GasStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
+		80B974FE1CF122B60042ED26 /* GasPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasPrice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,14 @@
 				80B974E41CF11BF60042ED26 /* AppDelegate.swift */,
 				80B974E61CF11BF60042ED26 /* ViewController.swift */,
 				80B974E81CF11BF60042ED26 /* Main.storyboard */,
+				80B974F81CF120190042ED26 /* EmergencyButton.swift */,
 				80B974EB1CF11BF60042ED26 /* Assets.xcassets */,
 				80B974ED1CF11BF60042ED26 /* LaunchScreen.storyboard */,
 				80B974F01CF11BF60042ED26 /* Info.plist */,
+				80B974F61CF11D260042ED26 /* EmergencyViewController.swift */,
+				80B974FA1CF121F80042ED26 /* GasStationService.swift */,
+				80B974FC1CF122050042ED26 /* GasStation.swift */,
+				80B974FE1CF122B60042ED26 /* GasPrice.swift */,
 			);
 			path = EmergencyFuel;
 			sourceTree = "<group>";
@@ -136,8 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B974FD1CF122050042ED26 /* GasStation.swift in Sources */,
 				80B974E71CF11BF60042ED26 /* ViewController.swift in Sources */,
+				80B974FF1CF122B60042ED26 /* GasPrice.swift in Sources */,
 				80B974E51CF11BF60042ED26 /* AppDelegate.swift in Sources */,
+				80B974FB1CF121F80042ED26 /* GasStationService.swift in Sources */,
+				80B974F71CF11D260042ED26 /* EmergencyViewController.swift in Sources */,
+				80B974F91CF120190042ED26 /* EmergencyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +272,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EmergencyFuel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mateffy.EmergencyFuel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,7 +285,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EmergencyFuel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mateffy.EmergencyFuel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
