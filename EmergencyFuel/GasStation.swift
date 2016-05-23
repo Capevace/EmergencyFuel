@@ -16,4 +16,8 @@ class GasStation {
     var distance: Float = 0.0
     var price: GasPrice = GasPrice(diesel: 0.0)
     
+    init(name: String) {
+        self.name = name
+    }
+    
 }

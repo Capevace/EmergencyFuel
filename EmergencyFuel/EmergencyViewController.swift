@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Ripple
 
 class EmergencyViewController: UIViewController {
 
@@ -25,5 +26,4 @@ class EmergencyViewController: UIViewController {
             NSLog("Station \(s.name) is \(s.distance) meters away.")
         }
     }
-    
 }

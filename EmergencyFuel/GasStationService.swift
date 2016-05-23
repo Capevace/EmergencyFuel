@@ -14,9 +14,9 @@ class GasStationService {
         var stations = [GasStation]()
         
         for i in 0...9 {
-            let station = GasStation()
-            station.name = "My name is " + String(i)
+            let station = GasStation(name: "My name is " + String(i))
             station.distance = Float(arc4random_uniform(10) * 20)
+            station.price = GasPrice(diesel: Float(arc4random()) / Float(0x100000000))
             
             stations.append(station)
         }

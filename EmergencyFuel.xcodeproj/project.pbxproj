@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801450BA1CF2658500B0DD0F /* KyloE.png in Resources */ = {isa = PBXBuildFile; fileRef = 801450B61CF2658500B0DD0F /* KyloE.png */; };
+		801450BB1CF2658500B0DD0F /* KyloC.png in Resources */ = {isa = PBXBuildFile; fileRef = 801450B71CF2658500B0DD0F /* KyloC.png */; };
+		801450BC1CF2658500B0DD0F /* KyloB.png in Resources */ = {isa = PBXBuildFile; fileRef = 801450B81CF2658500B0DD0F /* KyloB.png */; };
+		801450BD1CF2658500B0DD0F /* KyloA.png in Resources */ = {isa = PBXBuildFile; fileRef = 801450B91CF2658500B0DD0F /* KyloA.png */; };
+		801450C81CF2750900B0DD0F /* GasStationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801450C61CF2750900B0DD0F /* GasStationListViewController.swift */; };
+		801450C91CF2750900B0DD0F /* GasStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801450C71CF2750900B0DD0F /* GasStationCell.swift */; };
 		80B974E51CF11BF60042ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974E41CF11BF60042ED26 /* AppDelegate.swift */; };
 		80B974E71CF11BF60042ED26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974E61CF11BF60042ED26 /* ViewController.swift */; };
 		80B974EA1CF11BF60042ED26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B974E81CF11BF60042ED26 /* Main.storyboard */; };
@@ -17,9 +23,20 @@
 		80B974FB1CF121F80042ED26 /* GasStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FA1CF121F80042ED26 /* GasStationService.swift */; };
 		80B974FD1CF122050042ED26 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FC1CF122050042ED26 /* GasStation.swift */; };
 		80B974FF1CF122B60042ED26 /* GasPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FE1CF122B60042ED26 /* GasPrice.swift */; };
+		9DAE74C0F1F32E1D302BA91A /* Pods_EmergencyFuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A7E8C0CD884256325206DB /* Pods_EmergencyFuel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07A7E8C0CD884256325206DB /* Pods_EmergencyFuel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmergencyFuel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801450B61CF2658500B0DD0F /* KyloE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KyloE.png; sourceTree = "<group>"; };
+		801450B71CF2658500B0DD0F /* KyloC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KyloC.png; sourceTree = "<group>"; };
+		801450B81CF2658500B0DD0F /* KyloB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KyloB.png; sourceTree = "<group>"; };
+		801450B91CF2658500B0DD0F /* KyloA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KyloA.png; sourceTree = "<group>"; };
+		801450C31CF2715E00B0DD0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		801450C41CF271D200B0DD0F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		801450C51CF271D200B0DD0F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		801450C61CF2750900B0DD0F /* GasStationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationListViewController.swift; sourceTree = "<group>"; };
+		801450C71CF2750900B0DD0F /* GasStationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationCell.swift; sourceTree = "<group>"; };
 		80B974E11CF11BF50042ED26 /* EmergencyFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B974E41CF11BF60042ED26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80B974E61CF11BF60042ED26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +49,8 @@
 		80B974FA1CF121F80042ED26 /* GasStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationService.swift; sourceTree = "<group>"; };
 		80B974FC1CF122050042ED26 /* GasStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
 		80B974FE1CF122B60042ED26 /* GasPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasPrice.swift; sourceTree = "<group>"; };
+		F08670C7B60832EFFC091103 /* Pods-EmergencyFuel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyFuel.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmergencyFuel/Pods-EmergencyFuel.release.xcconfig"; sourceTree = "<group>"; };
+		F33B89E52202B7AEC3FCC4E2 /* Pods-EmergencyFuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyFuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmergencyFuel/Pods-EmergencyFuel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +58,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DAE74C0F1F32E1D302BA91A /* Pods_EmergencyFuel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066F122EC4D364B3455E9687 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F33B89E52202B7AEC3FCC4E2 /* Pods-EmergencyFuel.debug.xcconfig */,
+				F08670C7B60832EFFC091103 /* Pods-EmergencyFuel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3C0D29399BFC4D5ECA495473 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07A7E8C0CD884256325206DB /* Pods_EmergencyFuel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		801450B51CF2657400B0DD0F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				801450B61CF2658500B0DD0F /* KyloE.png */,
+				801450B71CF2658500B0DD0F /* KyloC.png */,
+				801450B81CF2658500B0DD0F /* KyloB.png */,
+				801450B91CF2658500B0DD0F /* KyloA.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		80B974D81CF11BF50042ED26 = {
 			isa = PBXGroup;
 			children = (
 				80B974E31CF11BF60042ED26 /* EmergencyFuel */,
 				80B974E21CF11BF50042ED26 /* Products */,
+				066F122EC4D364B3455E9687 /* Pods */,
+				3C0D29399BFC4D5ECA495473 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,19 +114,46 @@
 		80B974E31CF11BF60042ED26 /* EmergencyFuel */ = {
 			isa = PBXGroup;
 			children = (
+				80C3665E1CF3412D00C59893 /* EmergencyView */,
+				80C3665D1CF3411E00C59893 /* GasStation */,
+				80C3665B1CF3409E00C59893 /* GasStationListView */,
+				801450B51CF2657400B0DD0F /* Assets */,
 				80B974E41CF11BF60042ED26 /* AppDelegate.swift */,
 				80B974E61CF11BF60042ED26 /* ViewController.swift */,
 				80B974E81CF11BF60042ED26 /* Main.storyboard */,
-				80B974F81CF120190042ED26 /* EmergencyButton.swift */,
 				80B974EB1CF11BF60042ED26 /* Assets.xcassets */,
 				80B974ED1CF11BF60042ED26 /* LaunchScreen.storyboard */,
 				80B974F01CF11BF60042ED26 /* Info.plist */,
-				80B974F61CF11D260042ED26 /* EmergencyViewController.swift */,
+			);
+			path = EmergencyFuel;
+			sourceTree = "<group>";
+		};
+		80C3665B1CF3409E00C59893 /* GasStationListView */ = {
+			isa = PBXGroup;
+			children = (
+				801450C61CF2750900B0DD0F /* GasStationListViewController.swift */,
+				801450C71CF2750900B0DD0F /* GasStationCell.swift */,
+			);
+			name = GasStationListView;
+			sourceTree = "<group>";
+		};
+		80C3665D1CF3411E00C59893 /* GasStation */ = {
+			isa = PBXGroup;
+			children = (
 				80B974FA1CF121F80042ED26 /* GasStationService.swift */,
 				80B974FC1CF122050042ED26 /* GasStation.swift */,
 				80B974FE1CF122B60042ED26 /* GasPrice.swift */,
 			);
-			path = EmergencyFuel;
+			name = GasStation;
+			sourceTree = "<group>";
+		};
+		80C3665E1CF3412D00C59893 /* EmergencyView */ = {
+			isa = PBXGroup;
+			children = (
+				80B974F61CF11D260042ED26 /* EmergencyViewController.swift */,
+				80B974F81CF120190042ED26 /* EmergencyButton.swift */,
+			);
+			name = EmergencyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80B974F31CF11BF60042ED26 /* Build configuration list for PBXNativeTarget "EmergencyFuel" */;
 			buildPhases = (
+				BAE9279EBB435ED57E17D776 /* 📦 Check Pods Manifest.lock */,
 				80B974DD1CF11BF50042ED26 /* Sources */,
 				80B974DE1CF11BF50042ED26 /* Frameworks */,
 				80B974DF1CF11BF50042ED26 /* Resources */,
+				02254C3E8C90AA9529F78803 /* 📦 Embed Pods Frameworks */,
+				302B06B5EE7DA5D336FFEE6B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,13 +218,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801450BA1CF2658500B0DD0F /* KyloE.png in Resources */,
+				801450BD1CF2658500B0DD0F /* KyloA.png in Resources */,
+				801450BC1CF2658500B0DD0F /* KyloB.png in Resources */,
 				80B974EF1CF11BF60042ED26 /* LaunchScreen.storyboard in Resources */,
+				801450BB1CF2658500B0DD0F /* KyloC.png in Resources */,
 				80B974EC1CF11BF60042ED26 /* Assets.xcassets in Resources */,
 				80B974EA1CF11BF60042ED26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02254C3E8C90AA9529F78803 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmergencyFuel/Pods-EmergencyFuel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		302B06B5EE7DA5D336FFEE6B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmergencyFuel/Pods-EmergencyFuel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE9279EBB435ED57E17D776 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80B974DD1CF11BF50042ED26 /* Sources */ = {
@@ -154,7 +286,9 @@
 				80B974FD1CF122050042ED26 /* GasStation.swift in Sources */,
 				80B974E71CF11BF60042ED26 /* ViewController.swift in Sources */,
 				80B974FF1CF122B60042ED26 /* GasPrice.swift in Sources */,
+				801450C91CF2750900B0DD0F /* GasStationCell.swift in Sources */,
 				80B974E51CF11BF60042ED26 /* AppDelegate.swift in Sources */,
+				801450C81CF2750900B0DD0F /* GasStationListViewController.swift in Sources */,
 				80B974FB1CF121F80042ED26 /* GasStationService.swift in Sources */,
 				80B974F71CF11D260042ED26 /* EmergencyViewController.swift in Sources */,
 				80B974F91CF120190042ED26 /* EmergencyButton.swift in Sources */,
@@ -168,6 +302,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				80B974E91CF11BF60042ED26 /* Base */,
+				801450C31CF2715E00B0DD0F /* en */,
+				801450C41CF271D200B0DD0F /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -176,6 +312,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				80B974EE1CF11BF60042ED26 /* Base */,
+				801450C51CF271D200B0DD0F /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -270,6 +407,7 @@
 		};
 		80B974F41CF11BF60042ED26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33B89E52202B7AEC3FCC4E2 /* Pods-EmergencyFuel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -283,6 +421,7 @@
 		};
 		80B974F51CF11BF60042ED26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08670C7B60832EFFC091103 /* Pods-EmergencyFuel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -313,6 +452,7 @@
 				80B974F51CF11BF60042ED26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

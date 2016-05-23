@@ -1,0 +1,9 @@
+
+/* Class = "UINavigationItem"; title = "Emergency Fuel"; ObjectID = "BIq-hZ-XS0"; */
+"BIq-hZ-XS0.title" = "Emergency Fuel";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "y6R-4c-Iv2"; */
+"y6R-4c-Iv2.title" = "Gefundene Tankstellen";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uCN-M4-mgX"; */
+"uCN-M4-mgX.normalTitle" = "Button";

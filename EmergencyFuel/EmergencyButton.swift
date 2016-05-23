@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Ripple
+import SwiftyTimer
 
 class EmergencyButton: UIButton {
     
@@ -19,7 +21,10 @@ class EmergencyButton: UIButton {
         
         wasPressed = true;
         
+        ripple(self.center, view: self.superview!, times: 3)
+        
         self.backgroundColor = UIColor.redColor()
+        
     }
     
     func unpress() {
