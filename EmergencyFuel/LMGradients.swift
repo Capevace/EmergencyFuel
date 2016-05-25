@@ -11,9 +11,9 @@ import ChameleonFramework
 
 class LMColors {
     
-    static var backgroundPrimary = FlatPurple()
+    static var backgroundPrimary = FlatBlue()
     static let primaryColor = ContrastColorOf(LMColors.backgroundPrimary, returnFlat: true)
-    static let backgroundSecondary = LMColors.backgroundPrimary.darkenByPercentage(0.1)
+    static let backgroundSecondary = LMColors.backgroundPrimary.darkenByPercentage(0.2)
     static let buttonTextColor = LMColors.backgroundPrimary
     static let borderColor = LMColors.backgroundPrimary.darkenByPercentage(0.3)
     

@@ -29,7 +29,7 @@ class EmergencyButton: UIButton {
         self.animateBorder(self.frame)
         self.enabled = false
         
-        ripple(self.center, view: self.superview!, duration: 2, divider: 4)
+//        ripple(self.center, view: self.superview!, duration: 2, divider: 4)
     }
     
     func unpress() {
@@ -38,7 +38,8 @@ class EmergencyButton: UIButton {
         }
         isActive = false
         
-        self.enabled = false
+        self.enabled = true
+        self.spinnerLayer.removeFromSuperlayer()
     }
     
     func addBorder (rect: CGRect) {

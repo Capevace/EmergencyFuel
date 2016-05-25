@@ -14,5 +14,7 @@ target 'EmergencyFuel' do
   pod 'SwiftyTimer'
   pod 'ChameleonFramework/Swift'
   pod 'FontAwesome.swift'
+  pod 'BubbleTransition', '~> 1.0.0'
+  pod 'ZLSwipeableViewSwift'
 
 end

@@ -36,4 +36,7 @@ class GasStationListViewController : UITableViewController {
         
         return cell
     }
+    @IBAction func done(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

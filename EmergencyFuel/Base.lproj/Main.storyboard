@@ -53,6 +53,7 @@
                     <navigationItem key="navigationItem" title="Emergency Fuel" id="BIq-hZ-XS0"/>
                     <connections>
                         <outlet property="emergencyButton" destination="uCN-M4-mgX" id="U9F-xI-OEJ"/>
+                        <segue destination="ewd-N0-W5m" kind="presentation" identifier="goToGasStationView" id="zWZ-hI-uty"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -62,7 +63,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rrV-5D-7pr">
             <objects>
-                <navigationController id="cr7-wE-xsX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="gasStationList" id="cr7-wE-xsX" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Uv-fE-Q5a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -73,7 +74,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vyc-gd-6Dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="1765"/>
+            <point key="canvasLocation" x="-25" y="2177"/>
         </scene>
         <!--Found Gas Stations-->
         <scene sceneID="Y0i-ZS-39e">
@@ -167,16 +168,54 @@
                             <outlet property="delegate" destination="2XQ-8q-sFj" id="7rr-SM-n3k"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Found Gas Stations" id="y6R-4c-Iv2"/>
+                    <navigationItem key="navigationItem" title="Found Gas Stations" id="y6R-4c-Iv2">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="wWl-Qi-nvS">
+                            <connections>
+                                <action selector="done:" destination="2XQ-8q-sFj" id="nPH-FS-72G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hv-Fu-SHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623" y="1765"/>
+            <point key="canvasLocation" x="623" y="2177"/>
+        </scene>
+        <!--Gas Station Card View Controller-->
+        <scene sceneID="nHK-Ty-d27">
+            <objects>
+                <viewController id="ewd-N0-W5m" customClass="GasStationCardViewController" customModule="EmergencyFuel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xP4-Q6-1yg"/>
+                        <viewControllerLayoutGuide type="bottom" id="SfB-bK-OOb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TQH-3b-tSL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7w-kO-3hA" customClass="ZLSwipeableView" customModule="ZLSwipeableViewSwift">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="O7w-kO-3hA" secondAttribute="trailing" id="Nj1-zf-q8c"/>
+                            <constraint firstItem="O7w-kO-3hA" firstAttribute="leading" secondItem="TQH-3b-tSL" secondAttribute="leadingMargin" id="T34-ZM-1OF"/>
+                            <constraint firstItem="SfB-bK-OOb" firstAttribute="top" secondItem="O7w-kO-3hA" secondAttribute="bottom" id="aE9-Ih-buB"/>
+                            <constraint firstItem="O7w-kO-3hA" firstAttribute="top" secondItem="xP4-Q6-1yg" secondAttribute="bottom" id="wqx-S4-iYB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="swipeableView" destination="O7w-kO-3hA" id="ibb-Jz-QsX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sb5-5D-KQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="1430"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8e3-eN-yys">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OTV-In-8r7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="oRt-xh-2wr" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tHs-oZ-YMi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -186,6 +225,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x4s-3w-myg"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTV-In-8r7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-25" y="1103"/>
         </scene>

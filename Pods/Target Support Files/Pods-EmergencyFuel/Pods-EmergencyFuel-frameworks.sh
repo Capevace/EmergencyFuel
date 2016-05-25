@@ -84,7 +84,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/AFBlurSegue/AFBlurSegue.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/BubbleTransition/BubbleTransition.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FontAwesome.swift/FontAwesome_swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/LTMorphingLabel/LTMorphingLabel.framework"
@@ -92,9 +92,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyTimer/SwiftyTimer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TVButton/TVButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ZCAnimatedLabel/ZCAnimatedLabel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ZLSwipeableViewSwift/ZLSwipeableViewSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/AFBlurSegue/AFBlurSegue.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/BubbleTransition/BubbleTransition.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FontAwesome.swift/FontAwesome_swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/LTMorphingLabel/LTMorphingLabel.framework"
@@ -102,4 +103,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyTimer/SwiftyTimer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TVButton/TVButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ZCAnimatedLabel/ZCAnimatedLabel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ZLSwipeableViewSwift/ZLSwipeableViewSwift.framework"
 fi

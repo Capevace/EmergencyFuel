@@ -24,6 +24,9 @@
 		80B974FB1CF121F80042ED26 /* GasStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FA1CF121F80042ED26 /* GasStationService.swift */; };
 		80B974FD1CF122050042ED26 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FC1CF122050042ED26 /* GasStation.swift */; };
 		80B974FF1CF122B60042ED26 /* GasPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FE1CF122B60042ED26 /* GasPrice.swift */; };
+		80C5B02D1CF6174000F8677D /* GasStationCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5B02C1CF6174000F8677D /* GasStationCardViewController.swift */; };
+		80C5B02F1CF6187E00F8677D /* GasStationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5B02E1CF6187E00F8677D /* GasStationCardView.swift */; };
+		80C5B0311CF6189100F8677D /* GasStationCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C5B0301CF6189100F8677D /* GasStationCardView.xib */; };
 		9DAE74C0F1F32E1D302BA91A /* Pods_EmergencyFuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A7E8C0CD884256325206DB /* Pods_EmergencyFuel.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,9 @@
 		80B974FA1CF121F80042ED26 /* GasStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationService.swift; sourceTree = "<group>"; };
 		80B974FC1CF122050042ED26 /* GasStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
 		80B974FE1CF122B60042ED26 /* GasPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasPrice.swift; sourceTree = "<group>"; };
+		80C5B02C1CF6174000F8677D /* GasStationCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationCardViewController.swift; sourceTree = "<group>"; };
+		80C5B02E1CF6187E00F8677D /* GasStationCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationCardView.swift; sourceTree = "<group>"; };
+		80C5B0301CF6189100F8677D /* GasStationCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GasStationCardView.xib; sourceTree = "<group>"; };
 		F08670C7B60832EFFC091103 /* Pods-EmergencyFuel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyFuel.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmergencyFuel/Pods-EmergencyFuel.release.xcconfig"; sourceTree = "<group>"; };
 		F33B89E52202B7AEC3FCC4E2 /* Pods-EmergencyFuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyFuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmergencyFuel/Pods-EmergencyFuel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +140,9 @@
 		80C3665B1CF3409E00C59893 /* GasStationListView */ = {
 			isa = PBXGroup;
 			children = (
+				80C5B02C1CF6174000F8677D /* GasStationCardViewController.swift */,
+				80C5B02E1CF6187E00F8677D /* GasStationCardView.swift */,
+				80C5B0301CF6189100F8677D /* GasStationCardView.xib */,
 				801450C61CF2750900B0DD0F /* GasStationListViewController.swift */,
 				801450C71CF2750900B0DD0F /* GasStationCell.swift */,
 			);
@@ -222,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				801450BA1CF2658500B0DD0F /* KyloE.png in Resources */,
+				80C5B0311CF6189100F8677D /* GasStationCardView.xib in Resources */,
 				801450BD1CF2658500B0DD0F /* KyloA.png in Resources */,
 				801450BC1CF2658500B0DD0F /* KyloB.png in Resources */,
 				80B974EF1CF11BF60042ED26 /* LaunchScreen.storyboard in Resources */,
@@ -287,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80B974FD1CF122050042ED26 /* GasStation.swift in Sources */,
+				80C5B02F1CF6187E00F8677D /* GasStationCardView.swift in Sources */,
 				80B974E71CF11BF60042ED26 /* ViewController.swift in Sources */,
+				80C5B02D1CF6174000F8677D /* GasStationCardViewController.swift in Sources */,
 				80B974FF1CF122B60042ED26 /* GasPrice.swift in Sources */,
 				801450C91CF2750900B0DD0F /* GasStationCell.swift in Sources */,
 				80B974E51CF11BF60042ED26 /* AppDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 PODS:
-  - AFBlurSegue (1.2.1)
+  - BubbleTransition (1.0.3)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
@@ -9,9 +9,10 @@ PODS:
   - SwiftyTimer (1.4.0)
   - TVButton (0.1.5)
   - ZCAnimatedLabel (0.0.4)
+  - ZLSwipeableViewSwift (0.0.6)
 
 DEPENDENCIES:
-  - AFBlurSegue (~> 1.2.1)
+  - BubbleTransition (~> 1.0.0)
   - ChameleonFramework/Swift
   - FontAwesome.swift
   - LTMorphingLabel
@@ -19,9 +20,10 @@ DEPENDENCIES:
   - SwiftyTimer
   - TVButton (~> 0.1)
   - ZCAnimatedLabel
+  - ZLSwipeableViewSwift
 
 SPEC CHECKSUMS:
-  AFBlurSegue: 27e55f015360f4e11117d2c3a959dbb5316eef78
+  BubbleTransition: a7ae6678721406d60f604cbbea1ace505563119d
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   FontAwesome.swift: f694fe0f667d6d3390b5919cdb0556a27b75d427
   LTMorphingLabel: 490aa8e079f9247c7f3130f7d4b1be1d66677377
@@ -29,7 +31,8 @@ SPEC CHECKSUMS:
   SwiftyTimer: db4458cfaf67fc71e16ad6e4637c60b86f76a649
   TVButton: 8e8e5ba2890fd88f59b2ff5f84040f40b8c3efb0
   ZCAnimatedLabel: 519b688bef4403fd356bc785f9b61cdfd8e6472d
+  ZLSwipeableViewSwift: f252438a48d20b1687eba0083762be4c13448da2
 
-PODFILE CHECKSUM: 7dcc44610909c89b5e8868ca5a9bf48d6ab275e6
+PODFILE CHECKSUM: 80d2a871f279f538ad2ca609ea16f676802373fa
 
 COCOAPODS: 1.0.0

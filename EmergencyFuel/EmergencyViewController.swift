@@ -9,8 +9,9 @@
 import UIKit
 import ChameleonFramework
 import FontAwesome_swift
+import BubbleTransition
 
-class EmergencyViewController: UIViewController {
+class EmergencyViewController: UIViewController, UIViewControllerTransitioningDelegate {
 
     @IBOutlet weak var emergencyButton: EmergencyButton!
     
@@ -39,6 +40,7 @@ class EmergencyViewController: UIViewController {
     
     func pressed() {
         print("PRESSED")
+        
     }
     
     func emergencyButtonPressed(sebder: UIButton!) {
@@ -47,8 +49,32 @@ class EmergencyViewController: UIViewController {
         emergencyButton.press(true)
         
         
-        for s in GasStationService.fetch(0.0, longitude: 0.0) {
-            NSLog("Station \(s.name) is \(s.distance) meters away.")
-        }
+//        self.presentViewController(UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("gasStationList"), animated: true, completion: nil)
+        self.performSegueWithIdentifier("goToGasStationView", sender: nil)
+        emergencyButton.unpress()
+    }
+    
+    let transition = BubbleTransition()
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController
+        controller.transitioningDelegate = self
+        controller.modalPresentationStyle = .Custom
+    }
+    
+    // MARK: UIViewControllerTransitioningDelegate
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Present
+        transition.startingPoint = emergencyButton.center
+        transition.bubbleColor = emergencyButton.backgroundColor!
+        return transition
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Dismiss
+        transition.startingPoint = emergencyButton.center
+        transition.bubbleColor = emergencyButton.backgroundColor!
+        return transition
     }
 }
