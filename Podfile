@@ -10,8 +10,9 @@ target 'EmergencyFuel' do
   pod 'TVButton', '~> 0.1'
   pod 'Ripple'
   pod 'LTMorphingLabel'
-  pod 'AFBlurSegue', '~> 1.2.1'
   pod 'ZCAnimatedLabel'
   pod 'SwiftyTimer'
+  pod 'ChameleonFramework/Swift'
+  pod 'FontAwesome.swift'
 
 end

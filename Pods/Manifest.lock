@@ -1,5 +1,9 @@
 PODS:
   - AFBlurSegue (1.2.1)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - FontAwesome.swift (0.7.3)
   - LTMorphingLabel (0.2.0)
   - Ripple (2.1)
   - SwiftyTimer (1.4.0)
@@ -8,6 +12,8 @@ PODS:
 
 DEPENDENCIES:
   - AFBlurSegue (~> 1.2.1)
+  - ChameleonFramework/Swift
+  - FontAwesome.swift
   - LTMorphingLabel
   - Ripple
   - SwiftyTimer
@@ -16,12 +22,14 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFBlurSegue: 27e55f015360f4e11117d2c3a959dbb5316eef78
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  FontAwesome.swift: f694fe0f667d6d3390b5919cdb0556a27b75d427
   LTMorphingLabel: 490aa8e079f9247c7f3130f7d4b1be1d66677377
   Ripple: fb35d2d638e9bcc03c291f14e80ae6ab1e3a3dea
   SwiftyTimer: db4458cfaf67fc71e16ad6e4637c60b86f76a649
   TVButton: 8e8e5ba2890fd88f59b2ff5f84040f40b8c3efb0
   ZCAnimatedLabel: 519b688bef4403fd356bc785f9b61cdfd8e6472d
 
-PODFILE CHECKSUM: b5cafe3fe561c4c7a21e13ecab11c8b19c8195ec
+PODFILE CHECKSUM: 7dcc44610909c89b5e8868ca5a9bf48d6ab275e6
 
 COCOAPODS: 1.0.0

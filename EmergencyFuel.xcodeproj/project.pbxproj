@@ -13,6 +13,7 @@
 		801450BD1CF2658500B0DD0F /* KyloA.png in Resources */ = {isa = PBXBuildFile; fileRef = 801450B91CF2658500B0DD0F /* KyloA.png */; };
 		801450C81CF2750900B0DD0F /* GasStationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801450C61CF2750900B0DD0F /* GasStationListViewController.swift */; };
 		801450C91CF2750900B0DD0F /* GasStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801450C71CF2750900B0DD0F /* GasStationCell.swift */; };
+		801B7A051CF5E243003EAEF1 /* LMGradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7A041CF5E243003EAEF1 /* LMGradients.swift */; };
 		80B974E51CF11BF60042ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974E41CF11BF60042ED26 /* AppDelegate.swift */; };
 		80B974E71CF11BF60042ED26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974E61CF11BF60042ED26 /* ViewController.swift */; };
 		80B974EA1CF11BF60042ED26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B974E81CF11BF60042ED26 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		801450C51CF271D200B0DD0F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		801450C61CF2750900B0DD0F /* GasStationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationListViewController.swift; sourceTree = "<group>"; };
 		801450C71CF2750900B0DD0F /* GasStationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationCell.swift; sourceTree = "<group>"; };
+		801B7A041CF5E243003EAEF1 /* LMGradients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMGradients.swift; sourceTree = "<group>"; };
 		80B974E11CF11BF50042ED26 /* EmergencyFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B974E41CF11BF60042ED26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80B974E61CF11BF60042ED26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				80B974EB1CF11BF60042ED26 /* Assets.xcassets */,
 				80B974ED1CF11BF60042ED26 /* LaunchScreen.storyboard */,
 				80B974F01CF11BF60042ED26 /* Info.plist */,
+				801B7A041CF5E243003EAEF1 /* LMGradients.swift */,
 			);
 			path = EmergencyFuel;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				801450C81CF2750900B0DD0F /* GasStationListViewController.swift in Sources */,
 				80B974FB1CF121F80042ED26 /* GasStationService.swift in Sources */,
 				80B974F71CF11D260042ED26 /* EmergencyViewController.swift in Sources */,
+				801B7A051CF5E243003EAEF1 /* LMGradients.swift in Sources */,
 				80B974F91CF120190042ED26 /* EmergencyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
