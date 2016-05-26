@@ -11,11 +11,13 @@
 		801450BB1CF2658500B0DD0F /* KyloC.png in Resources */ = {isa = PBXBuildFile; fileRef = 801450B71CF2658500B0DD0F /* KyloC.png */; };
 		801450BC1CF2658500B0DD0F /* KyloB.png in Resources */ = {isa = PBXBuildFile; fileRef = 801450B81CF2658500B0DD0F /* KyloB.png */; };
 		801450BD1CF2658500B0DD0F /* KyloA.png in Resources */ = {isa = PBXBuildFile; fileRef = 801450B91CF2658500B0DD0F /* KyloA.png */; };
-		801450C81CF2750900B0DD0F /* GasStationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801450C61CF2750900B0DD0F /* GasStationListViewController.swift */; };
-		801450C91CF2750900B0DD0F /* GasStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801450C71CF2750900B0DD0F /* GasStationCell.swift */; };
-		801B7A051CF5E243003EAEF1 /* LMGradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7A041CF5E243003EAEF1 /* LMGradients.swift */; };
+		801B7A051CF5E243003EAEF1 /* LMStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7A041CF5E243003EAEF1 /* LMStyle.swift */; };
+		803110741CF75A7600086BC7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803110731CF75A7600086BC7 /* MapKit.framework */; };
+		803110761CF76E5D00086BC7 /* StationSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803110751CF76E5D00086BC7 /* StationSelectViewController.swift */; };
+		803110781CF7810500086BC7 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803110771CF7810500086BC7 /* HelpViewController.swift */; };
+		8031107A1CF7855600086BC7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803110791CF7855600086BC7 /* SettingsViewController.swift */; };
+		8031107F1CF7935200086BC7 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031107E1CF7935200086BC7 /* StationButton.swift */; };
 		80B974E51CF11BF60042ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974E41CF11BF60042ED26 /* AppDelegate.swift */; };
-		80B974E71CF11BF60042ED26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974E61CF11BF60042ED26 /* ViewController.swift */; };
 		80B974EA1CF11BF60042ED26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B974E81CF11BF60042ED26 /* Main.storyboard */; };
 		80B974EC1CF11BF60042ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B974EB1CF11BF60042ED26 /* Assets.xcassets */; };
 		80B974EF1CF11BF60042ED26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B974ED1CF11BF60042ED26 /* LaunchScreen.storyboard */; };
@@ -24,9 +26,6 @@
 		80B974FB1CF121F80042ED26 /* GasStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FA1CF121F80042ED26 /* GasStationService.swift */; };
 		80B974FD1CF122050042ED26 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FC1CF122050042ED26 /* GasStation.swift */; };
 		80B974FF1CF122B60042ED26 /* GasPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B974FE1CF122B60042ED26 /* GasPrice.swift */; };
-		80C5B02D1CF6174000F8677D /* GasStationCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5B02C1CF6174000F8677D /* GasStationCardViewController.swift */; };
-		80C5B02F1CF6187E00F8677D /* GasStationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5B02E1CF6187E00F8677D /* GasStationCardView.swift */; };
-		80C5B0311CF6189100F8677D /* GasStationCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C5B0301CF6189100F8677D /* GasStationCardView.xib */; };
 		9DAE74C0F1F32E1D302BA91A /* Pods_EmergencyFuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A7E8C0CD884256325206DB /* Pods_EmergencyFuel.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,14 +36,16 @@
 		801450B81CF2658500B0DD0F /* KyloB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KyloB.png; sourceTree = "<group>"; };
 		801450B91CF2658500B0DD0F /* KyloA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KyloA.png; sourceTree = "<group>"; };
 		801450C31CF2715E00B0DD0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		801450C41CF271D200B0DD0F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		801450C51CF271D200B0DD0F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		801450C61CF2750900B0DD0F /* GasStationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationListViewController.swift; sourceTree = "<group>"; };
-		801450C71CF2750900B0DD0F /* GasStationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationCell.swift; sourceTree = "<group>"; };
-		801B7A041CF5E243003EAEF1 /* LMGradients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMGradients.swift; sourceTree = "<group>"; };
+		801B7A041CF5E243003EAEF1 /* LMStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMStyle.swift; sourceTree = "<group>"; };
+		803110731CF75A7600086BC7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		803110751CF76E5D00086BC7 /* StationSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationSelectViewController.swift; sourceTree = "<group>"; };
+		803110771CF7810500086BC7 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		803110791CF7855600086BC7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8031107C1CF787BA00086BC7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		8031107D1CF787BA00086BC7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8031107E1CF7935200086BC7 /* StationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
 		80B974E11CF11BF50042ED26 /* EmergencyFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B974E41CF11BF60042ED26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80B974E61CF11BF60042ED26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80B974E91CF11BF60042ED26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80B974EB1CF11BF60042ED26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80B974EE1CF11BF60042ED26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,9 +55,6 @@
 		80B974FA1CF121F80042ED26 /* GasStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationService.swift; sourceTree = "<group>"; };
 		80B974FC1CF122050042ED26 /* GasStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
 		80B974FE1CF122B60042ED26 /* GasPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasPrice.swift; sourceTree = "<group>"; };
-		80C5B02C1CF6174000F8677D /* GasStationCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationCardViewController.swift; sourceTree = "<group>"; };
-		80C5B02E1CF6187E00F8677D /* GasStationCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasStationCardView.swift; sourceTree = "<group>"; };
-		80C5B0301CF6189100F8677D /* GasStationCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GasStationCardView.xib; sourceTree = "<group>"; };
 		F08670C7B60832EFFC091103 /* Pods-EmergencyFuel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyFuel.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmergencyFuel/Pods-EmergencyFuel.release.xcconfig"; sourceTree = "<group>"; };
 		F33B89E52202B7AEC3FCC4E2 /* Pods-EmergencyFuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyFuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmergencyFuel/Pods-EmergencyFuel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803110741CF75A7600086BC7 /* MapKit.framework in Frameworks */,
 				9DAE74C0F1F32E1D302BA91A /* Pods_EmergencyFuel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +84,7 @@
 		3C0D29399BFC4D5ECA495473 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				803110731CF75A7600086BC7 /* MapKit.framework */,
 				07A7E8C0CD884256325206DB /* Pods_EmergencyFuel.framework */,
 			);
 			name = Frameworks;
@@ -124,29 +124,19 @@
 			children = (
 				80C3665E1CF3412D00C59893 /* EmergencyView */,
 				80C3665D1CF3411E00C59893 /* GasStation */,
-				80C3665B1CF3409E00C59893 /* GasStationListView */,
 				801450B51CF2657400B0DD0F /* Assets */,
 				80B974E41CF11BF60042ED26 /* AppDelegate.swift */,
-				80B974E61CF11BF60042ED26 /* ViewController.swift */,
+				801B7A041CF5E243003EAEF1 /* LMStyle.swift */,
 				80B974E81CF11BF60042ED26 /* Main.storyboard */,
+				803110791CF7855600086BC7 /* SettingsViewController.swift */,
+				803110771CF7810500086BC7 /* HelpViewController.swift */,
+				8031107E1CF7935200086BC7 /* StationButton.swift */,
+				803110751CF76E5D00086BC7 /* StationSelectViewController.swift */,
 				80B974EB1CF11BF60042ED26 /* Assets.xcassets */,
 				80B974ED1CF11BF60042ED26 /* LaunchScreen.storyboard */,
 				80B974F01CF11BF60042ED26 /* Info.plist */,
-				801B7A041CF5E243003EAEF1 /* LMGradients.swift */,
 			);
 			path = EmergencyFuel;
-			sourceTree = "<group>";
-		};
-		80C3665B1CF3409E00C59893 /* GasStationListView */ = {
-			isa = PBXGroup;
-			children = (
-				80C5B02C1CF6174000F8677D /* GasStationCardViewController.swift */,
-				80C5B02E1CF6187E00F8677D /* GasStationCardView.swift */,
-				80C5B0301CF6189100F8677D /* GasStationCardView.xib */,
-				801450C61CF2750900B0DD0F /* GasStationListViewController.swift */,
-				801450C71CF2750900B0DD0F /* GasStationCell.swift */,
-			);
-			name = GasStationListView;
 			sourceTree = "<group>";
 		};
 		80C3665D1CF3411E00C59893 /* GasStation */ = {
@@ -231,7 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				801450BA1CF2658500B0DD0F /* KyloE.png in Resources */,
-				80C5B0311CF6189100F8677D /* GasStationCardView.xib in Resources */,
 				801450BD1CF2658500B0DD0F /* KyloA.png in Resources */,
 				801450BC1CF2658500B0DD0F /* KyloB.png in Resources */,
 				80B974EF1CF11BF60042ED26 /* LaunchScreen.storyboard in Resources */,
@@ -297,16 +286,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				80B974FD1CF122050042ED26 /* GasStation.swift in Sources */,
-				80C5B02F1CF6187E00F8677D /* GasStationCardView.swift in Sources */,
-				80B974E71CF11BF60042ED26 /* ViewController.swift in Sources */,
-				80C5B02D1CF6174000F8677D /* GasStationCardViewController.swift in Sources */,
 				80B974FF1CF122B60042ED26 /* GasPrice.swift in Sources */,
-				801450C91CF2750900B0DD0F /* GasStationCell.swift in Sources */,
 				80B974E51CF11BF60042ED26 /* AppDelegate.swift in Sources */,
-				801450C81CF2750900B0DD0F /* GasStationListViewController.swift in Sources */,
+				8031107A1CF7855600086BC7 /* SettingsViewController.swift in Sources */,
 				80B974FB1CF121F80042ED26 /* GasStationService.swift in Sources */,
+				803110781CF7810500086BC7 /* HelpViewController.swift in Sources */,
 				80B974F71CF11D260042ED26 /* EmergencyViewController.swift in Sources */,
-				801B7A051CF5E243003EAEF1 /* LMGradients.swift in Sources */,
+				8031107F1CF7935200086BC7 /* StationButton.swift in Sources */,
+				801B7A051CF5E243003EAEF1 /* LMStyle.swift in Sources */,
+				803110761CF76E5D00086BC7 /* StationSelectViewController.swift in Sources */,
 				80B974F91CF120190042ED26 /* EmergencyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +307,7 @@
 			children = (
 				80B974E91CF11BF60042ED26 /* Base */,
 				801450C31CF2715E00B0DD0F /* en */,
-				801450C41CF271D200B0DD0F /* de */,
+				8031107C1CF787BA00086BC7 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -328,7 +316,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				80B974EE1CF11BF60042ED26 /* Base */,
-				801450C51CF271D200B0DD0F /* de */,
+				8031107D1CF787BA00086BC7 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

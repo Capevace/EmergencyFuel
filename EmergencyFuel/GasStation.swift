@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GasStation {
+class GasStation: NSObject {
 
     var name: String = ""
     var latitude: Float = 0.0

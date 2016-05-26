@@ -1,9 +1,45 @@
 
+/* Class = "UILabel"; text = "100 m"; ObjectID = "0dG-Ub-3CV"; */
+"0dG-Ub-3CV.text" = "100 m";
+
+/* Class = "UINavigationItem"; title = "Nearest Gas Station"; ObjectID = "8m7-C9-GQ9"; */
+"8m7-C9-GQ9.title" = "Gefundene Tankstelle";
+
 /* Class = "UINavigationItem"; title = "Emergency Fuel"; ObjectID = "BIq-hZ-XS0"; */
 "BIq-hZ-XS0.title" = "Emergency Fuel";
 
-/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "y6R-4c-Iv2"; */
-"y6R-4c-Iv2.title" = "Gefundene Tankstellen";
+/* Class = "UILabel"; text = "$ 0.54 per liter"; ObjectID = "Ch2-ia-FBz"; */
+"Ch2-ia-FBz.text" = "$ 0.54 per liter";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uCN-M4-mgX"; */
-"uCN-M4-mgX.normalTitle" = "Button";
+/* Class = "UILabel"; text = "Distance:"; ObjectID = "IqR-SW-scl"; */
+"IqR-SW-scl.text" = "Distance:";
+
+/* Class = "UIButton"; normalTitle = "Take me to it!"; ObjectID = "KqX-dx-hyg"; */
+"KqX-dx-hyg.normalTitle" = "Bring mich hin!";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "R5o-uB-c4G"; */
+"R5o-uB-c4G.title" = "Einstellungen";
+
+/* Class = "UINavigationItem"; title = "Help"; ObjectID = "XgO-kn-cHR"; */
+"XgO-kn-cHR.title" = "Hilfe";
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "XiG-Jj-9nt"; */
+"XiG-Jj-9nt.title" = "Einstellungen";
+
+/* Class = "UIButton"; normalTitle = "Shit, show me another one!"; ObjectID = "cvB-fM-s0g"; */
+"cvB-fM-s0g.normalTitle" = "Zeig mir 'ne andere!";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ric-ID-wk1"; */
+"ric-ID-wk1.text" = "Label";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "sLa-8V-x2d"; */
+"sLa-8V-x2d.text" = "Price:";
+
+/* Class = "UIButton"; normalTitle = "Find Gas Station"; ObjectID = "uCN-M4-mgX"; */
+"uCN-M4-mgX.normalTitle" = "Tankstelle finden";
+
+/* Class = "UIBarButtonItem"; title = "Help"; ObjectID = "vJA-XD-YDk"; */
+"vJA-XD-YDk.title" = "Hilfe";
+
+/* Class = "UINavigationItem"; title = "Found Gas Stations"; ObjectID = "y6R-4c-Iv2"; */
+"y6R-4c-Iv2.title" = "Gefundene Tankstellen";

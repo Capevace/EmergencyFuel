@@ -16,41 +16,51 @@ class EmergencyViewController: UIViewController, UIViewControllerTransitioningDe
     @IBOutlet weak var emergencyButton: EmergencyButton!
     
     override func viewDidLoad() {
-        emergencyButton.addTarget(self, action: #selector(self.emergencyButtonPressed(_:)), forControlEvents: .TouchUpInside)
         
+        // Define FontAwesome font attributes
         let barButtonAttributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)]
         
-        let helpBarButton = UIBarButtonItem(title: String.fontAwesomeIconWithName(.QuestionCircle), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.pressed))
-        helpBarButton.setTitleTextAttributes(barButtonAttributes, forState: .Normal)
+        // Put buttons on bar
+        self.navigationItem.leftBarButtonItem!.setTitleTextAttributes(barButtonAttributes, forState: .Normal)
+        self.navigationItem.leftBarButtonItem!.title = String.fontAwesomeIconWithName(.QuestionCircle)
         
-        let settingsBarButton = UIBarButtonItem(title: String.fontAwesomeIconWithName(.Cog), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.pressed))
-        settingsBarButton.setTitleTextAttributes(barButtonAttributes, forState: .Normal)
+        self.navigationItem.rightBarButtonItem!.setTitleTextAttributes(barButtonAttributes, forState: .Normal)
+        self.navigationItem.rightBarButtonItem!.title = String.fontAwesomeIconWithName(.Cog)
         
-        self.navigationItem.leftBarButtonItem = helpBarButton
-        self.navigationItem.rightBarButtonItem = settingsBarButton
+        self.setBackground()
         
+        // Makes the UINavigationBar trasparent to be better with background of view
+        self.navigationController?.makeTransparent()
+    }
+    
+    func setBackground() {
+        self.setThemeUsingPrimaryColor(LMColors.backgroundPrimary, withSecondaryColor: LMColors.primaryColor, andContentStyle: .Contrast)
+        
+        // Set background gradient
         self.view.backgroundColor = LMColors.topToBottom(LMColors.backgroundPrimary, bottom: LMColors.backgroundSecondary, frame: self.view.frame)
         
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.translucent = true;
-        self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
-        self.navigationController?.view.backgroundColor = UIColor.clearColor()
+        self.setNeedsStatusBarAppearanceUpdate()
     }
     
-    func pressed() {
-        print("PRESSED")
-        
+    @IBAction func helpButtonPressed(sender: UIBarButtonItem!) {
+        self.performSegueWithIdentifier("toHelpViewController", sender: nil)
+        transition.startingPoint = CGPoint(x: 25, y: 40)
     }
     
-    func emergencyButtonPressed(sebder: UIButton!) {
-        NSLog("EMERGENCY!");
+    @IBAction func settingsButtonPressed(sender: UIBarButtonItem!) {
+        self.performSegueWithIdentifier("toSettingsViewController", sender: nil)
+        transition.startingPoint = CGPoint(x: self.view.frame.width-25, y: 40)
+    }
+    
+    @IBAction func emergencyButtonPressed(sender: UIButton!) {
         
         emergencyButton.press(true)
         
+        let data = GasStationService.fetch(0.0, longitude: 0.0)
         
-//        self.presentViewController(UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("gasStationList"), animated: true, completion: nil)
-        self.performSegueWithIdentifier("goToGasStationView", sender: nil)
+        self.performSegueWithIdentifier("toStationPageViewController", sender: data)
+        transition.startingPoint = emergencyButton.center
+        
         emergencyButton.unpress()
     }
     
@@ -60,21 +70,28 @@ class EmergencyViewController: UIViewController, UIViewControllerTransitioningDe
         let controller = segue.destinationViewController
         controller.transitioningDelegate = self
         controller.modalPresentationStyle = .Custom
+        
+        if segue.identifier == "toStationPageViewController" {
+//            let data = sender as! [GasStation]
+//            let stationController = controller as! StationPageViewController
+//            stationController.stations = data
+        }
     }
     
     // MARK: UIViewControllerTransitioningDelegate
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .Present
-        transition.startingPoint = emergencyButton.center
-        transition.bubbleColor = emergencyButton.backgroundColor!
+        transition.bubbleColor = LMColors.topToBottom(LMColors.primaryColor, bottom: LMColors.primaryColor.darkenByPercentage(0.05), frame: self.view.frame)
         return transition
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        self.setBackground()
+
+        print("transback")
         transition.transitionMode = .Dismiss
-        transition.startingPoint = emergencyButton.center
-        transition.bubbleColor = emergencyButton.backgroundColor!
+        transition.bubbleColor = LMColors.topToBottom(LMColors.primaryColor, bottom: LMColors.primaryColor.darkenByPercentage(0.2), frame: self.view.frame)
         return transition
     }
 }
