@@ -56,7 +56,9 @@ class EmergencyViewController: UIViewController, UIViewControllerTransitioningDe
         
         emergencyButton.press(true)
         
-        let data = GasStationService.fetch(0.0, longitude: 0.0)
+        let data = GasStationService.fetch(0.0, longitude: 0.0, onCompletion: {(stations: [GasStation]) -> Void in
+            
+        })
         
         self.performSegueWithIdentifier("toStationPageViewController", sender: data)
         transition.startingPoint = emergencyButton.center

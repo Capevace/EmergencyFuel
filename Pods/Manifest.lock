@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (3.4.0)
   - BubbleTransition (1.0.3)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
@@ -12,6 +13,7 @@ PODS:
   - ZLSwipeableViewSwift (0.0.6)
 
 DEPENDENCIES:
+  - Alamofire
   - BubbleTransition (~> 1.0.0)
   - ChameleonFramework/Swift
   - FontAwesome.swift
@@ -23,6 +25,7 @@ DEPENDENCIES:
   - ZLSwipeableViewSwift
 
 SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   BubbleTransition: a7ae6678721406d60f604cbbea1ace505563119d
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   FontAwesome.swift: f694fe0f667d6d3390b5919cdb0556a27b75d427
@@ -33,6 +36,6 @@ SPEC CHECKSUMS:
   ZCAnimatedLabel: 519b688bef4403fd356bc785f9b61cdfd8e6472d
   ZLSwipeableViewSwift: f252438a48d20b1687eba0083762be4c13448da2
 
-PODFILE CHECKSUM: 80d2a871f279f538ad2ca609ea16f676802373fa
+PODFILE CHECKSUM: a51386c95ec45e11eb00dffcd8b7272eb6c24c57
 
 COCOAPODS: 1.0.0

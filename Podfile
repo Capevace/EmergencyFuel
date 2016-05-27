@@ -16,5 +16,6 @@ target 'EmergencyFuel' do
   pod 'FontAwesome.swift'
   pod 'BubbleTransition', '~> 1.0.0'
   pod 'ZLSwipeableViewSwift'
+  pod 'Alamofire'
 
 end
